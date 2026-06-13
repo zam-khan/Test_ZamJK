@@ -1,0 +1,10 @@
+(globalThis["webpackChunk_canva_web"] = globalThis["webpackChunk_canva_web"] || []).push([[64414],{
+
+/***/ 991649:
+function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(905716);globalThis._5f74ec40302898c5a55451c9fbd04240 = globalThis._5f74ec40302898c5a55451c9fbd04240 || {};(function(__c) {var S8c=__webpack_require__(296713),D2=S8c.jsx,T8c=S8c.jsxs;var U8c=__webpack_require__(138643).PA;var V8c=__webpack_require__(978109),W8c=V8c.useCallback,X8c=V8c.useMemo,Y8c=V8c.useState;var Z8c=__webpack_require__(601944).A;var $8c=class{get M8(){return!this.im.active}get yK(){return __c.Rc()||this.isPlaying||this.ak}get V8(){return!this.yK}get isPlaying(){return this.pk.isPlaying(this.fill)}get je(){return this.pk.je(this.fill)}get ak(){return this.pk.ak(this.fill)}get Zj(){return this.pk.Zj(this.fill)}get duration(){return this.pk.getDuration(this.fill)}get Qq(){return this.pk.getState(this.fill).Qq}get currentTime(){return this.pk.getCurrentTime(this.fill)}get Gh(){return __c.hz(this.pk,this.fill)}get volume(){return this.pk.getVolume(this.fill)}get muted(){return this.volume===
+0}constructor(a,b,c){this.pk=a;this.fill=b;this.im=c;this.contentType=1;this.xa=this.zIndex=void 0;this.lja=this.YO=this.vU=this.gE=this.qTa=this.KSa=this.AK=this.jja=!0;this.sU=this.Y0a=!1}};__c.d3a={bda:U8c(a=>{const {pk:b,V3a:c,sIb:d,...e}=a,f=e.item;__c.x(f.type==="design");const [g,h]=Y8c(0),k=X8c(()=>new __c.dfb,[]),l=__c.y(__c.Tz(c,__c.y(f.V.first()))),m=W8c(r=>{r!=null&&k.Wma(r)},[k]),n=k.active?{width:g,left:0}:a.Yd,p=X8c(()=>new $8c(b,l,k),[l,k,b]),q=X8c(()=>new __c.mz(b,l),[l,b]);return a.ja.Wf?.WBa!=null?D2(d,{...e}):D2(Z8c,{onResize:r=>h(r.entry?.width??0),children:({measureRef:r})=>T8c("div",{ref:__c.Ed(m,r),className:"jkKFFw",children:[D2(d,{...e,Yd:n}),D2(__c.lz,{store:p,
+controller:q,nDa:!0,im:k})]})})})};
+}).call(globalThis, globalThis._5f74ec40302898c5a55451c9fbd04240);}
+
+}])
+//# sourceMappingURL=sourcemaps/68df84d17649b5ed.js.map

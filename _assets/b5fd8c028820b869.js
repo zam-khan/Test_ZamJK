@@ -1,0 +1,14 @@
+(globalThis["webpackChunk_canva_web"] = globalThis["webpackChunk_canva_web"] || []).push([[61289],{
+
+/***/ 792446:
+function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(905716);globalThis._5f74ec40302898c5a55451c9fbd04240 = globalThis._5f74ec40302898c5a55451c9fbd04240 || {};(function(__c) {var HOc,IOc,JOc,KOc,LOc;HOc=function(a){const b=a.size;return new Uint8Array([b>>24&255,b>>16&255,b>>8&255,b&255,...a.type.split("").map(c=>c.charCodeAt(0))])};
+__c.dZ=class{static create(a){a=a.flatMap(d=>d.parts());var b=a.reduce((d,e)=>d+e.byteLength,0);b=new Uint8Array(b);let c=0;for(const d of a)b.set(d,c),c+=d.byteLength;return b}static parse(a){const b=[];let c=0;for(;c<a.byteLength;)try{let e=void 0;var d=new DataView(a.buffer,a.byteOffset+c);if(d.byteLength<8)throw new RangeError("MP4 Box is too short");let f=0;const g=d.getUint32(f)||d.byteLength;f+=4;if(g===1)throw new TypeError("Large box is not supported");if(d.byteLength<g)throw new RangeError("MP4 Box is too short");
+const h=String.fromCharCode(d.getUint8(f),d.getUint8(f+1),d.getUint8(f+2),d.getUint8(f+3));f+=4;if(IOc.includes(h))e=new JOc(h,new Uint8Array(d.buffer,d.byteOffset+f,g-f));else if(KOc.includes(h)){const m=d.getUint8(f);f+=1;const n=d.getUint16(f)<<8|d.getUint8(f+2);f+=3;e=new LOc(h,m,n,new Uint8Array(d.buffer,d.byteOffset+f,g-f))}else e=new __c.MOc(h,new Uint8Array(d.buffer,d.byteOffset+f,g-f));const {box:k,size:l}={size:g,box:e};b.push(k);c+=l}catch(e){if(e instanceof RangeError)return{wy:b,offset:c,
+complete:!1};throw e;}return{wy:b,offset:c,complete:!0}}static find(a,b){return a.find(c=>c.type===b)}};IOc="dinf edts mdia minf moof moov mvex stbl traf trak".split(" ");
+JOc=class{get size(){return 8+this.children.reduce((a,b)=>a+b.size,0)}find(a){return __c.dZ.find(this.children,a)}get(a){const b=__c.dZ.find(this.children,a);__c.u(b!=null,`${a} box not found`);return b}parts(){const a=this.children.flatMap(b=>b.parts());return[HOc(this),...a]}constructor(a,b){this.type=a;a=__c.dZ.parse(b);__c.u(a.complete);this.children=a.wy}};KOc="co64 ctts elst hdlr mdhd mfhd mvhd sidx stco stsc stsd stss stsz stts tfhd tkhd trex trun vmhd".split(" ");
+LOc=class{get size(){return 12+this.data.byteLength}parts(){return[HOc(this),new Uint8Array([this.version,this.flags>>16,this.flags>>8&255,this.flags&255]),this.data]}view(){return new DataView(this.data.buffer,this.data.byteOffset,this.data.byteLength)}constructor(a,b,c,d){this.type=a;this.version=b;this.flags=c;this.data=d}};
+__c.MOc=class{get size(){return 8+this.data.byteLength}parts(){return[HOc(this),this.data]}view(){return new DataView(this.data.buffer,this.data.byteOffset,this.data.byteLength)}constructor(a,b){this.type=a;this.data=b}};
+}).call(globalThis, globalThis._5f74ec40302898c5a55451c9fbd04240);}
+
+}])
+//# sourceMappingURL=sourcemaps/b5fd8c028820b869.js.map
